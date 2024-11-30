@@ -1,0 +1,32 @@
+.contact {
+  margin: 80px auto;
+  max-width: 90%;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure layout adjusts on smaller screens */
+}
+
+.contact-col {
+  flex-basis: 48%; /* Occupies about half the width */
+}
+
+.book-meeting-container {
+  width: 100%; /* Ensures full width for BookMeeting */
+}
+
+/* Additional responsive styles */
+@media (max-width: 970px) {
+  .contact {
+    flex-direction: column; /* Stack items on smaller screens */
+  }
+
+  .contact-col {
+    flex-basis: 100%; /* Full width on smaller screens */
+    margin-top: 100px;
+    margin-bottom: 20px; /* Adds space between stacked items */
+  }
+}

@@ -1,0 +1,76 @@
+.glance-at-a-glance {
+  width: 90%;
+  margin-inline: auto;
+  padding: 2.5rem; /* ~40px */
+  margin-bottom: 6.25rem; /* ~100px */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.glance-content {
+  max-width: 60%;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.glance-h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-gray);
+  margin-bottom: 1.25rem; /* ~20px */
+}
+
+.glance-h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-gray);
+  margin-top: 1.25rem; /* ~20px */
+  margin-bottom: 0.625rem; /* ~10px */
+}
+
+.glance-p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem; /* ~20px */
+  color: #666;
+}
+
+.glance-image-container {
+  max-width: 35%;
+}
+
+.glance-side-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.625rem; /* ~10px */
+  box-shadow: 0px 0.625rem 1.875rem rgba(0, 0, 0, 0.1); /* ~10px 30px */
+  transition: transform 0.3s ease;
+}
+
+.glance-side-image:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 48rem) {
+  /* ~768px */
+  .glance-at-a-glance {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .glance-content {
+    max-width: 100%;
+  }
+
+  .glance-image-container {
+    max-width: 100%;
+    margin-top: 1.25rem; /* ~20px */
+  }
+
+  .glance-side-image {
+    width: 100%;
+    height: auto;
+  }
+}

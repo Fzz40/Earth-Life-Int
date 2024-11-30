@@ -1,0 +1,73 @@
+/* Card container */
+.time-picker-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card body */
+.time-picker-body {
+  padding: 20px;
+}
+
+/* Title of the time picker */
+.time-picker-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Label styling */
+.time-picker-label {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Container for the time list */
+.time-picker-list-container {
+  margin-bottom: 20px;
+}
+
+/* Time slot list */
+.time-picker-list {
+  max-height: 200px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ddd; /* Add border for better visibility */
+  border-radius: 0.375rem;
+  padding: 0;
+}
+
+/* Each time slot button */
+.time-picker-list-item {
+  width: 100%;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Active time slot */
+.time-picker-list-item.active {
+  background-color: #66b3ff;
+  color: #fff;
+}
+
+/* Hover effect for time slot */
+.time-picker-list-item:hover {
+  background-color: #e9ecef;
+}
+
+/* Selected time display */
+.time-picker-selected {
+  text-align: center;
+  font-size: 1rem;
+  color: #007bff;
+}

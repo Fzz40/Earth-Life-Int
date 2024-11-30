@@ -1,0 +1,42 @@
+.hero {
+  width: 100%;
+  height: 100vh; /* Set the height to 100vh to make it take the full viewport height */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  overflow: hidden; /* Prevent images from overflowing the container */
+  background: url("../../assets/image1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Ensure the carousel covers the full height */
+  object-fit: cover; /* Make the images fill the container without distorting aspect ratio */
+  z-index: -1; /* Place the carousel behind the content */
+}
+
+.hero-text {
+  text-align: center;
+  z-index: 1; /* Ensure the text appears above the carousel */
+  color: #fff;
+  max-width: 44rem;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin: 0.625rem auto 1.25rem;
+  line-height: 1.6;
+}

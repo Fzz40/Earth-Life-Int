@@ -1,0 +1,68 @@
+.corn-container {
+  width: 90%;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensure flexibility for smaller screens */
+}
+
+.corn-carousel {
+  flex: 1;
+  max-width: 30%;
+  min-width: 300px; /* Ensure a minimum width for small screens */
+}
+
+.corn-description {
+  flex: 1;
+  max-width: 50%;
+  min-width: 300px; /* Ensure text block does not shrink too much */
+}
+
+.corn-description p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .corn-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .corn-carousel {
+    max-width: 50%; /* Use full width */
+    min-width: unset; /* Remove min-width */
+    margin-bottom: 20px; /* Add spacing between carousel and text */
+  }
+
+  .corn-description {
+    max-width: 100%; /* Use full width */
+    text-align: center; /* Center align text for better readability */
+  }
+
+  .corn-description p {
+    font-size: 0.9rem; /* Slightly smaller font size for compact screens */
+  }
+}
+
+@media (max-width: 568px) {
+  .corn-container {
+    padding: 10px; /* Reduce padding further for very small screens */
+    gap: 10px; /* Reduce gap */
+  }
+  .corn-carousel {
+    max-width: 60%;
+  }
+  .corn-description p {
+    font-size: 0.8rem; /* Adjust font size for smaller devices */
+    margin-bottom: 15px; /* Reduce spacing between paragraphs */
+  }
+}

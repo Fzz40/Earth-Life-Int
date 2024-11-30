@@ -1,0 +1,48 @@
+/* Card container */
+.region-select-card {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card body */
+.region-select-body {
+  padding: 20px;
+}
+
+/* Title of the region selection */
+.region-select-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Label styling */
+.region-select-label {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Dropdown select styling */
+.region-select-dropdown {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 0.375rem;
+  background-color: #f1f8ff;
+  border: 1px solid #007bff;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* Dropdown focus styling */
+.region-select-dropdown:focus {
+  outline: none;
+  border-color: #0056b3;
+}

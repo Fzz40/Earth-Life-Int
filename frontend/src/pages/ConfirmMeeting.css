@@ -1,0 +1,16 @@
+/* Container holding both left and right columns */
+.meeting-details-container {
+  display: flex;
+  width: 90%;
+  margin-inline: auto;
+  margin-bottom: 100px;
+  max-width: 1100px;
+  gap: 20px;
+}
+
+/* Mobile responsiveness: Stacks the columns vertically on smaller screens */
+@media (max-width: 768px) {
+  .meeting-details-container {
+    flex-direction: column;
+  }
+}

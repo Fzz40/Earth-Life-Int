@@ -1,0 +1,45 @@
+.deicing-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 100px auto;
+  gap: 20px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.deicing-image {
+  width: 40%; /* Adjust size for the image */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.deicing-description {
+  width: 50%; /* Adjust size for the text */
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.deicing-description p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .deicing-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .deicing-image,
+  .deicing-description {
+    width: 100%;
+  }
+
+  .deicing-description {
+    margin-top: 20px;
+  }
+}

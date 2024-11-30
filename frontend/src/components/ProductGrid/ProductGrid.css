@@ -1,0 +1,66 @@
+.product-grid {
+  width: 90%;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns in a row */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Center-align rows with fewer items */
+  padding: 20px;
+}
+
+.product-card {
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for default state */
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.compressed-salt {
+  width: 50%; /* Reduce width to 50% of its original size */
+  height: auto; /* Maintain aspect ratio */
+  margin-block: 50px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card .product-image:hover {
+  transform: scale(1.05) translateY(-10px); /* Subtle scaling and upward movement */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.product-details h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.product-details p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Add centering for rows with fewer items */
+@media screen and (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    ); /* Responsive for smaller screens */
+  }
+}
+
+.product-grid:empty {
+  justify-content: center; /* Ensure alignment when grid has fewer items */
+}

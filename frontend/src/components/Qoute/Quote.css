@@ -1,0 +1,80 @@
+.quote-content {
+  flex: 1;
+  padding-right: 1.25rem; /* 20px converted to rem */
+}
+
+.quote-text {
+  font-size: 1rem;
+  line-height: 1.6; /* Already responsive */
+  color: #333; /* Neutral text color */
+  margin-bottom: 1.25rem; /* 20px converted to rem */
+}
+
+.quote-buttons {
+  display: flex;
+  gap: 0.625rem; /* 10px converted to rem */
+}
+
+.quote-button {
+  background-color: #a6aebf; /* Primary color */
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.25rem; /* 12px 20px converted to rem */
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.25rem; /* 4px converted to rem */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quote-button:hover {
+  background-color: #858b98; /* Darker shade for hover */
+}
+
+.quote-button-outline {
+  background-color: transparent;
+  color: #a6aebf; /* Primary color for outline */
+  border: 0.125rem solid #a6aebf; /* 2px converted to rem */
+  padding: 0.625rem 1.125rem; /* 10px 18px converted to rem */
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.25rem; /* 4px converted to rem */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quote-button-outline:hover {
+  background-color: #a6aebf; /* Hover becomes solid */
+  color: #fff;
+}
+
+.quote-image {
+  flex: 1;
+  text-align: right;
+}
+
+.quote-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .quote-container {
+    flex-direction: column;
+  }
+
+  .quote-button,
+  .quote-button-outline {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .quote-text {
+    font-size: 0.875rem;
+  }
+  .quote-image {
+    margin-block: 50px;
+    width: 80%;
+  }
+}

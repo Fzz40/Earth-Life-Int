@@ -1,0 +1,114 @@
+.book-meeting-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8ecf8; /* Lightened shade of #212ea0 for contrast */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 70px auto;
+  gap: 20px; /* Add gap for better spacing */
+}
+
+.text-content {
+  flex: 1;
+}
+
+.book-meeting-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #212ea0; /* Main color for title */
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #212ea0; /* Main color for separator */
+}
+
+.separator-dots {
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+
+.separator-line {
+  display: inline-block;
+  height: 2px;
+  width: 60px;
+  background-color: #212ea0; /* Main color for line */
+}
+
+.book-meeting-description {
+  font-size: 1rem;
+  color: #333; /* Neutral color for better readability */
+}
+
+.book-meeting-btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-color: #212ea0;
+  color: #212ea0;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.book-meeting-btn:hover {
+  background-color: #212ea0;
+  color: #fff; /* Invert text color for hover effect */
+}
+
+.image-content {
+  flex: 1;
+  text-align: center;
+}
+
+.calendar-image {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+@media (max-width: 668px) {
+  .book-meeting-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .text-content {
+    margin-bottom: 20px;
+  }
+
+  .book-meeting-title {
+    font-size: 1.5rem;
+  }
+  .separator {
+    width: 50%;
+    margin-inline: auto;
+  }
+  .separator-dots {
+    width: 50px;
+  }
+  .separator-line {
+    width: 50px;
+  }
+
+  .book-meeting-description {
+    font-size: 0.9rem;
+  }
+
+  .book-meeting-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .calendar-image {
+    max-width: 70%; /* Reduce image size for smaller screens */
+  }
+}
