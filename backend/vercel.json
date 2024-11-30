@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "routes/contactFormControllers.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "routes/nodemailerController.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/contactForm",
+      "dest": "routes/contactFormControllers.js"
+    },
+    {
+      "src": "/api/scheduleMeeting",
+      "dest": "routes/nodemailerController.js"
+    }
+  ]
+}
